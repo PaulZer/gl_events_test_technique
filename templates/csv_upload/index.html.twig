@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <a href="{{ path('home') }}">Back to homepage</a>
+    <h1>Upload a CSV file</h1>
+    {{ form(form) }}
+{% endblock %}

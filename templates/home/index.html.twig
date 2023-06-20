@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Home</h1>
+    <p>Connected as {{ app.user.username }}</p>
+    <a href="{{ path('index_upload_csv') }}">Upload a CSV file</a>
+{% endblock %}

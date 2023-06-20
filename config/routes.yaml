@@ -1,3 +1,14 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+    methods: [GET]
+
+index_upload_csv:
+    path: /upload-csv
+    controller: App\Controller\CSVUploadController::index
+    methods: [GET]
+
+upload_csv:
+    path: /upload-csv
+    controller: App\Controller\CSVUploadController::uploadCSV
+    methods: [POST]
